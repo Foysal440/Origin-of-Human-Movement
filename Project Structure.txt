@@ -1,0 +1,15 @@
+human_movement_analysis/
+│
+├── main.py                # Entry point (modified)
+├── analyzer.py            # Core analysis (modified)
+├── gui/                   # New GUI components
+│   ├── __init__.py
+│   └── analysis_window.py # PyQt5 main window
+├── utils/                 # Existing utilities
+│   ├── __init__.py
+│   ├── feature_extraction.py
+│   ├── clustering.py
+│   ├── visualization.py
+│   └── webcam_utils.py
+├── config.py              # Configuration
+└── requirements.txt       # Add PyQt5 and matplotlib
