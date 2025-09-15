@@ -1,15 +1,31 @@
-human_movement_analysis/
-│
-├── main.py                # Entry point (modified)
-├── analyzer.py            # Core analysis (modified)
-├── gui/                   # New GUI components
-│   ├── __init__.py
-│   └── analysis_window.py # PyQt5 main window
-├── utils/                 # Existing utilities
-│   ├── __init__.py
-│   ├── feature_extraction.py
-│   ├── clustering.py
-│   ├── visualization.py
-│   └── webcam_utils.py
-├── config.py              # Configuration
-└── requirements.txt       # Add PyQt5 and matplotlib
+ofca_project/
+├─ main.py
+├─ requirements.txt
+├─ README.txt
+└─ ofca/
+   ├─ __init__.py
+   ├─ app.py                        # QMainWindow: OpticalFlowClusterAnalyzer
+   ├─ _legacy/
+   │  └─ Human origin movement analyzer.py        # untouched backup of  original file
+   ├─ analysis/
+   │  ├─ __init__.py
+   │  ├─ movement_quality.py        # MovementQualityAnalyzer
+   │  ├─ fluid_motion.py            # FluidMotionAnalyzer
+   │  └─ worker.py                  # OpticalFlowAnalyzerWorker
+   ├─ vision/
+   │  ├─ __init__.py
+   │  ├─ detector.py                # (placeholder if later separate YOLO)
+   │  └─ optical_flow.py            # (placeholder for LK flow pipeline)
+   ├─ ui/
+   │  ├─ __init__.py
+   │  ├─ dialogs.py                 # ValidationResultsDialog, LabelFormatHelpDialog
+   │  ├─ tabs.py                    # placeholders to wire tabs/plots
+   │  └─ style.py                   # simple stylesheet
+   ├─ utils/
+   │  ├─ __init__.py
+   │  ├─ metrics.py                 # put Hopkins etc. here
+   │  ├─ visuals.py                 # draw_heatmap, trails, centroids
+   │  └─ tables.py                  # table/label filling helpers
+   └─ io/
+      ├─ __init__.py
+      └─ reporting.py               # export CSV/XLSX
