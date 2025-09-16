@@ -1,0 +1,10 @@
+numpy>=1.24.3
+pandas>=1.3.0
+opencv-python>=4.5.0
+scikit-learn>=1.3.0
+matplotlib>=3.4.0
+plotly>=5.0.0
+ipywidgets>=7.6.0
+tqdm>=4.62.0
+PyQt5==5.15.9
+# pin one matplotlib only (remove duplicates if present)
